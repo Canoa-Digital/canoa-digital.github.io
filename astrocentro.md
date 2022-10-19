@@ -2,7 +2,8 @@ layout: page
 title: "Astrocentro"
 permalink: /astrocentro
 
-[How To](#How-To)
+# Index
+- [How To](#How-To)
 
 # How To
 
