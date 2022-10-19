@@ -3,8 +3,8 @@ title: "Astrocentro"
 permalink: /astrocentro
 
 # Index
-- [How To](#How-To)
-    - [How to change an expert service availability through the database](##How-to-change-an-expert-service-availability-through-the-database)
+- [How To](#how-to)
+    - [How to change an expert service availability through the database](##how-to-change-an-expert-service-availability-through-the-database)
 
 # How To
 
