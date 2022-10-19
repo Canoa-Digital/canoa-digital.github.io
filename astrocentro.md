@@ -1,3 +1,7 @@
+layout: page
+title: "Astrocentro"
+permalink: /astrocentro
+
 # How's to
 
 ## How to make an expert available through the database
