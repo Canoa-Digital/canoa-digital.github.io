@@ -2,7 +2,9 @@ layout: page
 title: "Astrocentro"
 permalink: /astrocentro
 
-# How's to
+[How To](#How-To)
+
+# How To
 
 ## How to change an expert's services availability through the database
 
