@@ -153,7 +153,7 @@ This is important when the only way to pass props to our component is via DOM pr
 ***Line 44***: We must remember to import our application styles, so our component will have all the necessary styles to display our elements correctly.
 ***Line 46-49***: We must not forget to specify the ```font-family``` that our component will display. Defining the ```font-size``` is also important so tags like ```<div>```, ```<span>``` will inherit the correct size.
 
-##### Blabla
+##### Using a web component with custom child component styles
 
 Remember to use the VRoot component and add the comment line below in the child components that has custom styles.
 
