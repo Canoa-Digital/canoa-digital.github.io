@@ -4,7 +4,9 @@ permalink: /astrocentro-webapp
 
 # Index
 - [How To](#how-to)
-    - [How to create a Web Component in Astrocentro](#how-to-create-a-web-component-in-astrocentro)
+  - [How to create a Web Component in Astrocentro](#how-to-create-a-web-component-in-astrocentro)
+- [Code Style Guide](#code-style-guide)
+  - [Conditional Rendering](#conditional-rendering)
 
 # How To
 
@@ -250,3 +252,28 @@ You should see this at ```localhost:3000```:
 
 ![alt text](https://lh3.googleusercontent.com/drive-viewer/AJc5JmSB7lcKYgfNTrLSs1sa7cCtU4-8kSOFdDqLAPXDndtTr-vGA46xOFM6_ipYMRvMicosPywL97I=w2880-h1578)
 
+# Code Style Guide
+
+This is a reference on how to write code in a consistent manner for this project
+
+## Conditional Rendering
+
+The directives **v-if**, **v-else**, **v-else-if** and **v-show** are used to conditionally render elements.
+
+The rule for the directive's expression is to set a **Computed Property** when the expression needs too much logic, this way the code is easy to maintain.
+
+```
+<script setup>
+  import { computed } from "vue";
+
+  ...
+
+  const isChecked = computed(() => props.modelValue === props.value);
+</script>
+
+<template>
+  ...
+  <a v-if="isChecked">Anchor Here </a>
+  ...
+</template>
+```
