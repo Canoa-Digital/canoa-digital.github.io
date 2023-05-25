@@ -5,6 +5,7 @@ permalink: /astrocentro-webapp
 # Index
 - [How To](#how-to)
   - [How to create a Web Component in Astrocentro](#how-to-create-a-web-component-in-astrocentro)
+  - [How to setup XServer on MacOS](#how-to-setup-xserver-on-macos)
 - [Code Style Guide](#code-style-guide)
   - [Conditional Rendering](#conditional-rendering)
 
@@ -251,6 +252,34 @@ To test our component, we need to add our newly registered tag at ```index.html`
 You should see this at ```localhost:3000```:
 
 ![alt text](https://lh3.googleusercontent.com/drive-viewer/AJc5JmSB7lcKYgfNTrLSs1sa7cCtU4-8kSOFdDqLAPXDndtTr-vGA46xOFM6_ipYMRvMicosPywL97I=w2880-h1578)
+
+## How to setup XServer on MacOS
+
+### Introduction
+
+This documentation covers the process of setting up a XServer on MacOS to launch Playwright in headed mode inside a Docker container.
+
+#### 1. Install XQuartz
+
+```
+brew install --cask xquartz
+```
+
+#### 2. Change XQuartz preferences
+
+in XQuartz go to **Preferences** -> **Security** and check **Allow connections from network clients**
+
+#### 3. Restart your computer
+
+#### 4. Start XQuartz
+
+```
+xhost +localhost
+```
+
+### Reference
+
+[Running Playwright inside Docker containers](https://www.oddbird.net/2022/11/30/headed-playwright-in-docker/)
 
 # Code Style Guide
 
